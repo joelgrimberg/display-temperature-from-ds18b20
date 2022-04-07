@@ -14,7 +14,7 @@ module.exports = {
     },
   },
   testPathIgnorePatterns: ['<rootDir>/cypress/'],
-  modulePaths: ['<rootDir>'],
+  modulePaths: ['<rootDir>', '<rootDir>/src', '<rootDir>/src/utils'],
   rootDir: '.',
   moduleDirectories: ['node_modules', path.join(__dirname, 'src'), 'utils'],
 }
