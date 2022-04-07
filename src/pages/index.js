@@ -1,10 +1,12 @@
-import file from './file.txt'
+import file from '../../public/temp.txt'
 import { readTemp } from '../utils/readtemp'
 
 var x = readTemp(file)
+
 const Index = () => (
   <div>
-    <h1>current temp: {x}</h1>
+    <h1>🌡️ {x} 🌡️</h1>
+    <h2></h2>
   </div>
 )
 
