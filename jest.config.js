@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   // Your normal jest config settings
   testPathIgnorePatterns: ['<rootDir>/cypress/'],
@@ -14,4 +16,5 @@ module.exports = {
   testPathIgnorePatterns: ['<rootDir>/cypress/'],
   modulePaths: ['<rootDir>'],
   rootDir: '.',
+  moduleDirectories: ['node_modules', path.join(__dirname, 'src'), 'utils'],
 }
