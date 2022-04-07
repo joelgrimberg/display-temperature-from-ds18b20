@@ -12,4 +12,5 @@ module.exports = {
     },
   },
   testPathIgnorePatterns: ['<rootDir>/cypress/'],
+  modulePaths: ['<rootDir>'],
 }
