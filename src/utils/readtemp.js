@@ -3,4 +3,4 @@ function readTemp(input) {
   return str[20].slice(2) / 1000.0
 }
 
-module.exports = { readTemp }
+module.exports = readTemp

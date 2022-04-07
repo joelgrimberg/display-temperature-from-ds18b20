@@ -1,5 +1,5 @@
 import file from '../../public/temp.txt'
-import { readTemp } from '../utils/readtemp'
+import readTemp from '../utils/readtemp'
 
 var x = readTemp(file)
 
