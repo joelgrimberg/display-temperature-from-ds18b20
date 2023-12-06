@@ -14,11 +14,11 @@ export const getServerSideProps = async (context) => {
   }
   if (process.env.SETUP === 'macos') {
     return {
-      props: { x: 2.22 },
+      props: { temp: 2.22 },
     };
   } else {
     return {
-      props: { x: 'no environment variable set' },
+      props: { temp: 'no environment variable set' },
     };
   }
 };
@@ -35,7 +35,7 @@ export default function Index(props) {
 
   return (
     <div>
-      <h1>🌡️ {props.x}</h1>
+      <h1>🌡️ {props.temp}</h1>
       <h2></h2>
     </div>
   );
