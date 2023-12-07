@@ -1,5 +1,6 @@
 import { InfluxDB, Point } from '@influxdata/influxdb-client'
 import sensor from 'ds18x20'
+import 'dotenv/config'
 
 const token = process.env.INFLUX_TOKEN
 const url = process.env.INFLUX_URL
@@ -24,4 +25,4 @@ const pushTemperature = () => {
     writeClient.flush()
 }
 
-setInterval(pushTemperature, process.env.INFLUX_FLUSH_INTERVAL)
+setInterval(pushTemperature, 10_000)
